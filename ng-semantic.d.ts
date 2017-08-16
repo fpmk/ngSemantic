@@ -24,8 +24,11 @@ export * from "./src/dimmer/dimmer";
 export * from "./src/transition/transition";
 export * from "./src/shape/shape";
 export * from "./src/accordion/accordion";
-import { ModuleWithProviders } from "@angular/core";
+import { ModuleWithProviders, NgModule } from "@angular/core";
 
+@NgModule({
+  declarations: [ NgSemanticModule ]
+})
 export declare class NgSemanticModule {
   static forRoot(): ModuleWithProviders;
 }
