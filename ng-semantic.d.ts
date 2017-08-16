@@ -26,9 +26,7 @@ export * from "./src/shape/shape";
 export * from "./src/accordion/accordion";
 import { ModuleWithProviders, NgModule } from "@angular/core";
 
-@NgModule({
-  declarations: [ NgSemanticModule ]
-})
+@NgModule()
 export declare class NgSemanticModule {
   static forRoot(): ModuleWithProviders;
 }
