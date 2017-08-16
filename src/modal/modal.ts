@@ -56,8 +56,8 @@ export class SemanticModalComponent implements OnDestroy {
   }
 }
 
-@Directive({ selector: 'modal-content, modal-actions' })
+@Directive({ selector: "modal-content, modal-actions" })
 export class SMModalTagsDirective {
-  // No behavior
-  // The only purpose is to "declare" the tag in Angular2
+  // no behavior
+  // the only purpose is to "declare" the tag in Angular2
 }

@@ -30,7 +30,7 @@ export class SemanticSelectComponent implements AfterViewInit {
         jQuery(this.select.nativeElement.parentNode).removeClass("disabled");
       }
     }, 1);
-  };
+  }
 
   @Input() options: {} = {};
   @Input() placeholder: string;
