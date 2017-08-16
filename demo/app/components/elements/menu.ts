@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "sm-menu-card",
-    template: `
-	<div class="ui masthead vertical segment">
+  selector: "sm-menu-card",
+  template: `
+    <div class="ui masthead vertical segment">
     <div class="ui container">
         <h1>Menu</h1>
         <p>Semantic UI Menu component <i class="icon external"></i>
@@ -17,7 +17,7 @@ import { Component } from "@angular/core";
         
         <sm-menu class="menu right secondary icon">
             <a sm-item href="#/elements/menu"
-            image="http://semantic-ui.com/images/avatar/small/stevie.jpg">Elliot Fu</a>
+               image="http://semantic-ui.com/images/avatar/small/stevie.jpg">Elliot Fu</a>
         
             <a sm-item icon="sidebar big" (click)="menuSidebar.show({transition: 'overlay'})"></a>
             <sm-sidebar class="right vertical inverted sidebar labeled menu teal huge" #menuSidebar>
@@ -59,8 +59,8 @@ import { Component } from "@angular/core";
     <div class="ui horizontal section icon divider"><i class="icon setting"></i></div>
     <h4 class="ui header">Demo pointing</h4>
     <sm-menu class="three item pointing">
-        <a sm-item *ngFor="let item of ['Editorials', 'Reviews', 'Upcoming Events']; let i = index" 
-        [ngClass]="{'active': i == 1}" >{{item}}</a>
+        <a sm-item *ngFor="let item of ['Editorials', 'Reviews', 'Upcoming Events']; let i = index"
+           [ngClass]="{'active': i == 1}">{{item}}</a>
     </sm-menu>
     
     <div class="ui horizontal section icon divider"><i class="icon setting"></i></div>
@@ -128,39 +128,41 @@ import { Component } from "@angular/core";
   </tbody>
 </table>
 </div>
-`
+  `
 })
 
 export class MenuComponent {
-    items: Array<any> = [];
-    labeledIcons: Array<any> = [];
+  items: Array<any> = [];
+  labeledIcons: Array<any> = [];
 
-    constructor() {
-        this.items = [{
-            "title": "Home",
-            "link": "Home",
-            "icon": "home"
-        }, {
-                "title": "About Us",
-                "link": "#/"
-            }, {
-                "title": "Contact",
-                "link": "#/"
-            }];
+  constructor() {
+    this.items = [
+      {
+        "icon": "home",
+        "link": "Home",
+        "title": "Home",
+      }, {
+        "link": "#/",
+        "title": "About Us",
+      }, {
+        "link": "#/",
+        "title": "Contact",
+      } ];
 
-        this.labeledIcons = [{
-            "title": "Games",
-            "link": "Home",
-            "icon": "gamepad"
-        }, {
-                "title": "Chanel",
-                "link": "Chanel",
-                "icon": "video camera"
-            }, {
-                "title": "Videos",
-                "link": "Videos",
-                "icon": "video play"
-            }];
+    this.labeledIcons = [
+      {
+        "icon": "gamepad",
+        "link": "Home",
+        "title": "Games",
+      }, {
+        "icon": "video camera",
+        "link": "Chanel",
+        "title": "Chanel",
+      }, {
+        "icon": "video play",
+        "link": "Videos",
+        "title": "Videos",
+      } ];
 
-    }
+  }
 }

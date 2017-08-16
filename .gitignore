@@ -5,3 +5,5 @@ src/**/*.js
 demo/app/**/*.js
 npm-debug.log
 bundles
+*.iml
+package-lock.json
